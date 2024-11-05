@@ -1,0 +1,32 @@
+/* Đảm bảo body và html có chiều cao 100% để dễ dàng căn giữa */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.he {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Chiều cao màn hình */
+}
+
+.ha {
+  font-size: 10vw; /* Kích thước chữ lớn, điều chỉnh tự động theo chiều rộng màn hình */
+  color: #333;
+  text-align: center;
+  animation: rotate 3s linear infinite; /* Tạo hiệu ứng xoay vòng */
+}
+
+/* Định nghĩa animation xoay */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
